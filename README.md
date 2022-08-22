@@ -20,13 +20,14 @@ docker run --rm -it -v $(pwd):/go/src/app -w /go/src/app -e GOOS=darwin -e GOARC
 
 ## Note
 
-| architecture         | setup | dev | cpu | sec | plat | note      |
-| -------------------- | :---: | :-: | :-: | :-: | :--: | :-------: |
-| Golang (imaging)     | o     | o   | x   | o   | o    |           |
-| Golang (image)       | o     | x   | x   | o   | o    |           |
-| Golang (bimg)        | x     | o   | o   | o   | o    |           |
-| ImageMagick (shell)  | x     | o   | x   | x   | o    |           |
-| libvips (shell)      | x     | ?   | o   | o   | x    |           |
-| ImageMagick (docker) | x     | o   | o   | x   | o    |           |
-| libvips (docker)     | x     | ?   | o   | o   | o    |           |
-| Automator            | o     | o   | x   | o   | x    | x quality |
+| architecture         | setup | dev | cpu | sec | plt | note      |
+| -------------------- | :---: | :-: | :-: | :-: | :-: | :-------: |
+| Golang (imaging)     | o     | o   | x   | o   | o   |           |
+| Golang (image)       | o     | x   | x   | o   | o   |           |
+| Golang (bimg)        | x     | o   | o   | o   | o   |           |
+| ImageMagick (shell)  | x     | o   | x   | x   | o   |           |
+| libvips (shell)      | x     | ?   | o   | o   | x   |           |
+| ImageMagick (docker) | x     | o   | x   | x   | o   |           |
+| libvips (docker)     | x     | ?   | o   | o   | o   |           |
+| Automator            | o     | o   | x   | o   | x   | x:quality |
+| Online               | o     | x   | o   | o   | o   | x:cost    |
