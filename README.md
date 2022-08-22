@@ -20,11 +20,13 @@ docker run --rm -it -v $(pwd):/go/src/app -w /go/src/app -e GOOS=darwin -e GOARC
 
 ## Note
 
-- Golang (imaging)
-- Golang (image)
-- Golang (bimg)
-- Automator
-- ImageMagick (shell)
-- libvips (shell)
-- docker + ImageMagick
-- docker + libvips
+| architecture         | setup | dev | cpu | sec | plat | note      |
+| -------------------- | :---: | :-: | :-: | :-: | :--: | :-------: |
+| Golang (imaging)     | o     | o   | x   | o   | o    |           |
+| Golang (image)       | o     | x   | x   | o   | o    |           |
+| Golang (bimg)        | x     | o   | o   | o   | o    |           |
+| ImageMagick (shell)  | x     | o   | x   | x   | o    |           |
+| libvips (shell)      | x     | ?   | o   | o   | x    |           |
+| ImageMagick (docker) | x     | o   | o   | x   | o    |           |
+| libvips (docker)     | x     | ?   | o   | o   | o    |           |
+| Automator            | o     | o   | x   | o   | x    | x quality |
